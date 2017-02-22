@@ -14,3 +14,17 @@ rails s
 ```
 
 Your app should now be running on [localhost:3000](http://localhost:3000/).
+
+## Added controller methods
+
+```ruby
+user_signed_in? # Checking user authorization
+
+current_user # Add @current_user variable
+```
+
+## Added view helpers
+
+```ruby
+user_signed_in?
+```
