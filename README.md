@@ -2,6 +2,37 @@
 
 This is a simple Ruby app using the [Rails](http://rubyonrails.org) framework with added login/logout/register/restore_password logic with external API and Devise without using DB.
 
+## Versions
+
+- [Admin version](https://github.com/kefiriaus/ruby-rails-sample/tree/master)
+- [Landing page with external auth API](https://github.com/kefiriaus/ruby-rails-sample/tree/external-api-auth)
+
+## Landing page with external auth API
+
+Added gems:
+```ruby
+# Auth
+gem 'devise'
+gem 'devise-i18n'
+
+# Email validator
+gem 'validates_email_format_of'
+
+# Error pages
+gem 'gaffe'
+```
+
+Added development gems:
+```ruby
+gem "better_errors"
+gem "binding_of_caller"
+
+gem 'rubocop' # to check Ruby code
+gem 'scss-lint' # to check SCSS code
+
+gem 'phare' # check for coding style errors
+```
+
 ## Running Locally
 
 Make sure you have [Ruby](https://www.ruby-lang.org), [Bundler](http://bundler.io) installed.
