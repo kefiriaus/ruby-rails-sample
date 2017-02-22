@@ -62,26 +62,26 @@ end
 gem 'jquery-turbolinks', '~> 2.1'
 
 # ActiveAdmin
-gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin'
-gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
+# gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin'
+# gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
 gem 'devise'
 gem 'devise-i18n'
-gem "active_material", github: "vigetlabs/active_material" # , branch: 'nh-responsive-redesign'
+# gem "active_material", github: "vigetlabs/active_material" # , branch: 'nh-responsive-redesign'
 
 # WYSIWYG for activeadmin
-gem 'ckeditor'
+# gem 'ckeditor'
 
-gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
-gem "mini_magick"
+# gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+# gem "mini_magick"
 
 # Menu DSL
-gem "navigator"
+# gem "navigator"
 
 # Email validator
 gem 'validates_email_format_of'
 
 # Meta tags
-gem 'meta-tags'
+# gem 'meta-tags'
 
 # Error pages
 gem 'gaffe'

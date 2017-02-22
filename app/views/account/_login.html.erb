@@ -1,0 +1,55 @@
+<%= form_tag login_path, remote: true, class: 'form form--auth' do |f| %>
+  <div class="popup__title">
+    <b>Авторизация</b>
+  </div>
+  <div class="form__row">
+    <div class="form__notes"></div>
+    <div class="form__errors"></div>
+  </div>
+  <div class="form__row">
+    <div class="form__input">
+      <%= label :user, :email, class: 'form__label' do %>
+          <i class="ico ico--email"></i>Ваша эл. почта
+      <% end %>
+      <%= text_field :user, :email %>
+    </div>
+  </div>
+  <div class="form__row">
+    <div class="form__input">
+      <%= label :user, :password, class: 'form__label' do %>
+          <i class="ico ico--lock"></i>Ваш пароль
+      <% end %>
+      <%= password_field :user, :password %>
+    </div>
+
+    <a href="" class="form__forget" data-modal="js-modal--password">Забыли пароль?</a>
+  </div>
+  <div class="form__row">
+    <div id="submit_login" class="button button--left"><strong style="cursor: pointer;">ВОЙТИ</strong></div>
+    <div class="clear"></div>
+  </div>
+<% end %>
+<br /><br />
+<%= form_tag restore_password_path, remote: true, class: 'form form--pass' do |f| %>
+  <div class="popup__title">
+    <b>Восстановление пароля</b>
+  </div>
+  <div class="form__row">
+    <div class="form__notes"></div>
+    <div class="form__errors"></div>
+  </div>
+  <div class="form__row">
+    <div class="form__input">
+      <%= label :user, :email, class: 'form__label' do %>
+          <i class="ico ico--lock"></i>Ваша эл. почта
+      <% end %>
+      <%= text_field :user, :email %>
+    </div>
+  </div>
+
+  <div class="form__row">
+    <div id="submit_restore_password" class="button button--left"><strong style="cursor: pointer;">ВОССТАНОВИТЬ ПАРОЛЬ</strong></div>
+    <a href="" class="form__link form__link--right js-show-auth">авторизоваться</a>
+    <div class="clear"></div>
+  </div>
+<% end %>

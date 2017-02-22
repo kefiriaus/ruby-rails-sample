@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
-  mount Ckeditor::Engine => '/ckeditor'
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
   root 'welcome#index'
+
+  devise_scope :user do
+    post 'login', to: 'account#login'
+    get 'confirm/:autologin', to: 'account#autologin'
+    get 'logout', to: 'account#logout'
+    post 'register', to: 'account#register'
+    post 'restore_password', to: 'account#restore_password'
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
