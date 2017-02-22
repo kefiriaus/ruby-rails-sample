@@ -11,6 +11,9 @@ This is a simple Ruby app using the [Rails](http://rubyonrails.org) framework wi
 
 Added gems:
 ```ruby
+# Add compatibility with jquery
+gem 'jquery-turbolinks', '~> 2.1'
+
 # Auth
 gem 'devise'
 gem 'devise-i18n'
